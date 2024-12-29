@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="news-container">
+    <h1>Экологические новости</h1>
+    <div class="news-grid">
+        {% for item in news %}
+        <div class="news-card">
+            {% if item.image_url %}
+            <img src="{{ item.image_url }}" alt="{{ item.title }}">
+            {% endif %}
+            <div class="news-content">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.content[:200] }}...</p>
+                <div class="news-meta">
+                    <span>{{ item.source }}</span>
+                    <span>{{ item.published_at.strftime('%d.%m.%Y') }}</span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

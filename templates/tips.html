@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="tips-container">
+    <h1>Эко советы</h1>
+    <div class="tips-grid">
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='images/energy.gif') }}" alt="Энергия">
+            <h3>Экономия энергии</h3>
+            <p>Используйте энергосберегающие лампы и выключайте свет</p>
+        </div>
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='images/water.gif') }}" alt="Вода">
+            <h3>Экономия воды</h3>
+            <p>Закрывайте кран во время чистки зубов</p>
+        </div>
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='images/recycle.gif') }}" alt="Переработка">
+            <h3>Сортировка мусора</h3>
+            <p>Разделяйте отходы по категориям</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --primary-color: #4a9f45;
+    --secondary-color: #2c5834;
+    --accent-color: #f7b71d;
+    --background-color: #e8f3e6;
+}
+
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+  nav {
+      background-color: var(--primary-color);
+      padding: 0.5rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 40px;
+  }
+
+  body {
+      padding-top: 40px;
+      margin: 0;
+  }
+
+  .hero {
+      margin-top: 0;
+      padding-top: 2rem;
+  }
+
+  .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+  }
+
+  main {
+      margin-top: 0;
+  }
+
+  .logo {
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+  }
+
+  .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 1rem;
+  }
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* Добавляем новые стили для изображений */
+.feature-card img {
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card img:hover {
+    transform: scale(1.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('https://stardewvalley.net/wp-content/uploads/2017/12/background.jpg') center/cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Улучшаем overlay для лучшей читаемости текста */
+.hero-overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}  /* Добавляем поддержку кириллицы */
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&subset=cyrillic');
+
+  /* Остальные стили остаются теми же, меняем только текстовые значения */
+  .hero h1 {
+      font-size: 2.5rem;
+      color: var(--secondary-color);
+      text-shadow: 2px 2px var(--accent-color);
+      margin-bottom: 1.5rem;
+  }
+
+  .feature-card h2 {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      color: var(--secondary-color);
+  }
+
+  .feature-card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--secondary-color);
+  }  
+
+  .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .feature-card {
+      background: url('https://stardewvalley.net/wp-content/uploads/2017/12/wood-texture.png');
+      border: 4px solid #45283c;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+  }
+
+  .feature-card:hover {
+      transform: translateY(-5px);
+  }
+
+  .feature-card img {
+      width: 128px;
+      height: 128px;
+      object-fit: contain;
+      transition: transform 0.3s;
+  }
+
+  .feature-card img:hover {
+      transform: scale(1.1) rotate(5deg);
+  }
+
+  footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+
+  /* Add these new decorative elements */
+  .page-border-top {
+      height: 64px;
+      background: url('https://stardewvalley.net/wp-content/uploads/2017/12/border-top.png') repeat-x;
+  }
+
+  .page-border-bottom {
+      height: 64px;
+      background: url('https://stardewvalley.net/wp-content/uploads/2017/12/border-bottom.png') repeat-x;
+  }
+
+.register-container {
+    background: url('https://wallpapers.com/images/hd/2d-stardew-valley-mountains-and-sky-bxdaa0lic9b5coki.webp');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.register-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.register-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-form button:hover {
+    background: var(--secondary-color);
+}
+
+.auth-btn {
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    transition: transform 0.3s;
+}
+
+.register-btn {
+    background-color: #f7b71d;
+}
+
+.auth-btn:hover {
+    transform: scale(1.05);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+  .eco-slogan {
+      background-color: var(--secondary-color);
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-top: 40px;
+  }

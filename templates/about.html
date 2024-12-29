@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="about-container">
+    <h1>О нашем проекте</h1>
+    <div class="about-content">
+        <img src="{{ url_for('static', filename='images/team.gif') }}" alt="Команда">
+        <div class="about-text">
+            <h2>Наша миссия</h2>
+            <p>Мы стремимся сделать мир чище и зеленее!</p>
+            <h2>Наша команда</h2>
+            <p>Мы - группа энтузиастов, заботящихся об экологии</p>
+            <h2>Присоединяйтесь к нам</h2>
+            <p>Вместе мы сможем сделать больше!</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
